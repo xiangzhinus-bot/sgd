@@ -1,0 +1,17 @@
+[MPI 16 ranks] Loading data with prefix 'processed' (ext .mmap) ...
+Global batch size: 393216, Max LR: 0.004
+Starting training...
+Epoch 001: loss=0.082822, test_rmse=0.325251, lr=0.0016, time=29.50s | io=162.28s, compute=59.89s, comm=171.85s, grad0=nan
+Epoch 002: loss=0.032198, test_rmse=0.187310, lr=0.0022, time=27.80s | io=158.95s, compute=59.28s, comm=154.51s, grad0=nan
+Epoch 003: loss=0.014541, test_rmse=0.172489, lr=0.0028, time=26.89s | io=158.17s, compute=57.55s, comm=145.31s, grad0=nan
+Epoch 004: loss=0.019410, test_rmse=0.214503, lr=0.0034, time=26.99s | io=148.06s, compute=57.05s, comm=161.56s, grad0=nan
+Epoch 005: loss=0.022346, test_rmse=0.190808, lr=0.004, time=23.10s | io=115.59s, compute=58.49s, comm=141.46s, grad0=nan
+Epoch 006: loss=0.012172, test_rmse=0.126143, lr=0.003714, time=28.15s | io=161.50s, compute=56.93s, comm=156.01s, grad0=nan
+Epoch 007: loss=0.007799, test_rmse=0.124684, lr=0.002964, time=26.88s | io=156.81s, compute=53.34s, comm=148.11s, grad0=nan
+Epoch 008: loss=0.007772, test_rmse=0.124684, lr=0.002036, time=25.30s | io=145.44s, compute=49.86s, comm=150.35s, grad0=nan
+Epoch 009: loss=0.007772, test_rmse=0.124684, lr=0.001286, time=25.59s | io=147.74s, compute=51.06s, comm=146.90s, grad0=nan
+Epoch 010: loss=0.007772, test_rmse=0.124684, lr=0.001, time=26.64s | io=148.19s, compute=52.64s, comm=155.63s, grad0=nan
+Early stopping triggered at epoch 10.
+
+Training finished. Best test RMSE: 0.124684 at epoch 7
+Training history saved to experiment_results/mpi_processes-16__activation-leaky_relu__batch-24576__hidden-64__prefetch-2__q_super-40.json

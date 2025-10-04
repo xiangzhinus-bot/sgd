@@ -1,0 +1,12 @@
+[MPI 8 ranks] Loading data with prefix 'processed' (ext .mmap) ...
+Global batch size: 393216, Max LR: 0.00283
+Starting training...
+Epoch 001: loss=0.018874, test_rmse=0.179928, lr=0.001366, time=29.36s | io=91.41s, compute=40.40s, comm=74.64s, grad0=nan
+Epoch 002: loss=0.015680, test_rmse=0.171124, lr=0.001731, time=29.57s | io=93.59s, compute=41.52s, comm=74.22s, grad0=nan
+Epoch 003: loss=0.015456, test_rmse=0.177317, lr=0.002097, time=30.45s | io=93.31s, compute=42.47s, comm=78.39s, grad0=nan
+Epoch 004: loss=0.016890, test_rmse=0.186392, lr=0.002463, time=31.58s | io=94.50s, compute=41.23s, comm=87.76s, grad0=nan
+Epoch 005: loss=0.017671, test_rmse=0.185086, lr=0.002828, time=23.49s | io=59.80s, compute=37.85s, comm=69.52s, grad0=nan
+Early stopping triggered at epoch 5.
+
+Training finished. Best test RMSE: 0.171124 at epoch 2
+Training history saved to experiment_results/mpi_processes-8__activation-leaky_relu__batch-49152__hidden-64__prefetch-2__q_super-20.json

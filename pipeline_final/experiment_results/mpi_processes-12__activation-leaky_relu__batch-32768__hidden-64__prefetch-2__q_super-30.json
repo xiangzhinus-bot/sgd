@@ -1,0 +1,243 @@
+{
+  "config": {
+    "prefix": "processed",
+    "ext": "mmap",
+    "features": 8,
+    "dtype": "float32",
+    "hidden": 64,
+    "activation": "leaky_relu",
+    "lr": 0.001,
+    "lr_schedule": "cosine",
+    "lr_scale": "sqrt",
+    "warmup": 5,
+    "lr_step_epochs": 10,
+    "lr_gamma": 0.5,
+    "weight_decay": 1e-05,
+    "clip": 1.0,
+    "batch": 32768,
+    "epochs": 10,
+    "patience": 3,
+    "min_delta": 1e-06,
+    "eval_batch": 262144,
+    "seed": 2025,
+    "momentum": 0.9,
+    "log_file": "experiment_results/mpi_processes-12__activation-leaky_relu__batch-32768__hidden-64__prefetch-2__q_super-30.json",
+    "q_super": 30,
+    "prefetch": 2,
+    "debug": false,
+    "debug_first_batches": 1,
+    "history_granularity": "step",
+    "log_every_steps": 50
+  },
+  "best_rmse": 0.12468449769851736,
+  "best_epoch": 10,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.029166597208900486,
+      "test_rmse": 0.22912665447640562,
+      "lr": 0.001492820323027551,
+      "time": 25.282014846801758,
+      "io_time_sum": 120.38676404953003,
+      "compute_time_sum": 46.72170948982239,
+      "comm_time_sum": 89.8744375705719,
+      "grad_norm_first": NaN,
+      "q_super": 30,
+      "prefetch": 2,
+      "world_size": 12
+    },
+    {
+      "epoch": 2,
+      "loss": 0.024665606155258014,
+      "test_rmse": 0.21124386138596127,
+      "lr": 0.001985640646055102,
+      "time": 25.11302638053894,
+      "io_time_sum": 117.9202492237091,
+      "compute_time_sum": 45.82001519203186,
+      "comm_time_sum": 94.61383628845215,
+      "grad_norm_first": NaN,
+      "q_super": 30,
+      "prefetch": 2,
+      "world_size": 12
+    },
+    {
+      "epoch": 3,
+      "loss": 0.021254386688176218,
+      "test_rmse": 0.19810970683277498,
+      "lr": 0.0024784609690826527,
+      "time": 25.00360417366028,
+      "io_time_sum": 118.31264996528625,
+      "compute_time_sum": 46.79100966453552,
+      "comm_time_sum": 90.84588479995728,
+      "grad_norm_first": NaN,
+      "q_super": 30,
+      "prefetch": 2,
+      "world_size": 12
+    },
+    {
+      "epoch": 4,
+      "loss": 0.018737412960321085,
+      "test_rmse": 0.18618768996183566,
+      "lr": 0.0029712812921102037,
+      "time": 25.594512224197388,
+      "io_time_sum": 120.2629005908966,
+      "compute_time_sum": 46.1300094127655,
+      "comm_time_sum": 94.95940494537354,
+      "grad_norm_first": NaN,
+      "q_super": 30,
+      "prefetch": 2,
+      "world_size": 12
+    },
+    {
+      "epoch": 5,
+      "loss": 0.01587331223723059,
+      "test_rmse": 0.16642205300263788,
+      "lr": 0.0034641016151377543,
+      "time": 19.11825132369995,
+      "io_time_sum": 75.25696229934692,
+      "compute_time_sum": 45.67351675033569,
+      "comm_time_sum": 74.66548991203308,
+      "grad_norm_first": NaN,
+      "q_super": 30,
+      "prefetch": 2,
+      "world_size": 12
+    },
+    {
+      "epoch": 6,
+      "loss": 0.01176018053560018,
+      "test_rmse": 0.1374489101425935,
+      "lr": 0.003228800848825477,
+      "time": 24.95809555053711,
+      "io_time_sum": 118.91296553611755,
+      "compute_time_sum": 46.5778284072876,
+      "comm_time_sum": 90.31921982765198,
+      "grad_norm_first": NaN,
+      "q_super": 30,
+      "prefetch": 2,
+      "world_size": 12
+    },
+    {
+      "epoch": 7,
+      "loss": 0.008327764146833946,
+      "test_rmse": 0.12500619321434256,
+      "lr": 0.002612775445041038,
+      "time": 24.972392320632935,
+      "io_time_sum": 116.72923874855042,
+      "compute_time_sum": 47.03117394447327,
+      "comm_time_sum": 94.07004189491272,
+      "grad_norm_first": NaN,
+      "q_super": 30,
+      "prefetch": 2,
+      "world_size": 12
+    },
+    {
+      "epoch": 8,
+      "loss": 0.007784176692897747,
+      "test_rmse": 0.12469846819304316,
+      "lr": 0.0018513261700967162,
+      "time": 25.328243494033813,
+      "io_time_sum": 119.44491124153137,
+      "compute_time_sum": 45.1052029132843,
+      "comm_time_sum": 97.39767098426819,
+      "grad_norm_first": NaN,
+      "q_super": 30,
+      "prefetch": 2,
+      "world_size": 12
+    },
+    {
+      "epoch": 9,
+      "loss": 0.007772621029324775,
+      "test_rmse": 0.12468622729146733,
+      "lr": 0.0012353007663122775,
+      "time": 25.27730107307434,
+      "io_time_sum": 116.72165107727051,
+      "compute_time_sum": 43.74509239196777,
+      "comm_time_sum": 98.22032332420349,
+      "grad_norm_first": NaN,
+      "q_super": 30,
+      "prefetch": 2,
+      "world_size": 12
+    },
+    {
+      "epoch": 10,
+      "loss": 0.007771974849296527,
+      "test_rmse": 0.12468449769851736,
+      "lr": 0.001,
+      "time": 24.75365161895752,
+      "io_time_sum": 118.13132286071777,
+      "compute_time_sum": 43.91849613189697,
+      "comm_time_sum": 90.18763637542725,
+      "grad_norm_first": NaN,
+      "q_super": 30,
+      "prefetch": 2,
+      "world_size": 12
+    }
+  ],
+  "step_history": [
+    {
+      "k": 50,
+      "train_rmse": 0.23431914379202473,
+      "lr": 0.001492820323027551
+    },
+    {
+      "k": 100,
+      "train_rmse": 0.2204284132794949,
+      "lr": 0.001985640646055102
+    },
+    {
+      "k": 150,
+      "train_rmse": 0.20865374626815006,
+      "lr": 0.0024784609690826527
+    },
+    {
+      "k": 200,
+      "train_rmse": 0.19907840447640382,
+      "lr": 0.0024784609690826527
+    },
+    {
+      "k": 250,
+      "train_rmse": 0.19112520279799772,
+      "lr": 0.0029712812921102037
+    },
+    {
+      "k": 300,
+      "train_rmse": 0.18057297652872298,
+      "lr": 0.0034641016151377543
+    },
+    {
+      "k": 350,
+      "train_rmse": 0.1648969376891124,
+      "lr": 0.003228800848825477
+    },
+    {
+      "k": 400,
+      "train_rmse": 0.14409523732201565,
+      "lr": 0.003228800848825477
+    },
+    {
+      "k": 450,
+      "train_rmse": 0.12739531644580884,
+      "lr": 0.002612775445041038
+    },
+    {
+      "k": 500,
+      "train_rmse": 0.12483017189397144,
+      "lr": 0.0018513261700967162
+    },
+    {
+      "k": 550,
+      "train_rmse": 0.12471960390720674,
+      "lr": 0.0018513261700967162
+    },
+    {
+      "k": 600,
+      "train_rmse": 0.12466489370730006,
+      "lr": 0.0012353007663122775
+    },
+    {
+      "k": 650,
+      "train_rmse": 0.12468300923846735,
+      "lr": 0.001
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "base_config": {
+    "prefix": "processed",
+    "ext": "mmap",
+    "features": 8,
+    "dtype": "float32",
+    "lr": 0.001,
+    "lr_schedule": "cosine",
+    "lr_scale": "sqrt",
+    "warmup": 5,
+    "lr_step_epochs": 10,
+    "lr_gamma": 0.5,
+    "weight_decay": 1e-05,
+    "clip": 1.0,
+    "epochs": 10,
+    "patience": 3,
+    "min_delta": 1e-06,
+    "eval_batch": 262144,
+    "seed": 2025,
+    "momentum": 0.9
+  },
+  "global_batch_target": 393216,
+  "force_auto_q_super": true,
+  "target_super_samples": 1000000,
+  "max_q_super": 128,
+  "history_granularity": "step",
+  "log_every_steps": 50,
+  "results": [
+    {
+      "name": "mpi_processes-24__activation-leaky_relu__batch-16384__hidden-64__prefetch-2__q_super-61",
+      "success": true,
+      "time": 224.51531958580017
+    },
+    {
+      "name": "mpi_processes-16__activation-leaky_relu__batch-24576__hidden-64__prefetch-2__q_super-40",
+      "success": true,
+      "time": 268.3367829322815
+    },
+    {
+      "name": "mpi_processes-12__activation-leaky_relu__batch-32768__hidden-64__prefetch-2__q_super-30",
+      "success": true,
+      "time": 246.9167823791504
+    },
+    {
+      "name": "mpi_processes-8__activation-leaky_relu__batch-49152__hidden-64__prefetch-2__q_super-20",
+      "success": true,
+      "time": 145.73898673057556
+    },
+    {
+      "name": "mpi_processes-4__activation-leaky_relu__batch-98304__hidden-64__prefetch-2__q_super-10",
+      "success": true,
+      "time": 413.08050870895386
+    }
+  ]
+}
